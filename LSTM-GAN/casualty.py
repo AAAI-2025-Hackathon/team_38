@@ -77,18 +77,7 @@ class TCN(nn.Module):
         return self.linear(y1.transpose(1, 2))
     
 class CausalConvDiscriminator(nn.Module):
-    """Discriminator using casual dilated convolution, outputs a probability for each time step
 
-    Args:
-        input_size (int): dimensionality (channels) of the input
-        n_layers (int): number of hidden layers
-        n_channels (int): number of channels in the hidden layers (it's always the same)
-        kernel_size (int): kernel size in all the layers
-        dropout: (float in [0-1]): dropout rate
-        
-    Input: (batch_size, seq_len, input_size)
-    Output: (batch_size, seq_len, 1)
-    """
     def __init__(self, input_size, n_layers, n_channel, kernel_size, dropout=0):
         super().__init__()
         num_channels = [n_channel] * n_layers
@@ -98,19 +87,7 @@ class CausalConvDiscriminator(nn.Module):
         return torch.sigmoid(self.tcn(x, channel_last))
 
 class CausalConvGenerator(nn.Module):
-    """Generator using casual dilated convolution, expecting a noise vector for each timestep as input
 
-    Args:
-        noise_size (int): dimensionality (channels) of the input noise
-        output_size (int): dimenstionality (channels) of the output sequence
-        n_layers (int): number of hidden layers
-        n_channels (int): number of channels in the hidden layers (it's always the same)
-        kernel_size (int): kernel size in all the layers
-        dropout: (float in [0-1]): dropout rate
-        
-    Input: (batch_size, seq_len, input_size)
-    Output: (batch_size, seq_len, outputsize)
-    """ 
     def __init__(self, noise_size, output_size, n_layers, n_channel, kernel_size, dropout=0):
         super().__init__()
         num_channels = [n_channel] * n_layers

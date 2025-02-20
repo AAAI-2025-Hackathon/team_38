@@ -39,6 +39,7 @@ def time_series_to_plot(time_series_batch, dpi=35, feature_idx=0, n_images_per_r
         if titles:
             ax.set_title(titles[i])
         ax.plot(series[:, feature_idx].numpy())
+        plt.show()
         plt.close()
 
         return fig
