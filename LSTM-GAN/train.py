@@ -1,5 +1,6 @@
 from lstm_discriminator import LSTMDiscriminator
 from lstm_generator import LSTMGenerator
+from casualty import CausalConvDiscriminator,CausalConvGenerator
 import torch 
 from torch.utils.data import DataLoader
 import numpy as np
@@ -14,10 +15,13 @@ from dotenv import load_dotenv
 
 def training_loop():
     for epoch in range(150000):
+        generator.train()
+        discriminator.train()
         for step,data in enumerate(dataloader):
             discriminator.zero_grad()
             real=data.to(device)
-
+            real=real.view(real.size(0),real.size(1),1)
+            
             batch_size,seq_len=real.size(0),real.size(1)
             label=torch.full((batch_size,seq_len,1),real_label,device=device)
 
@@ -47,30 +51,35 @@ def training_loop():
             optimizer_g.step()
 
          #Plotting
-        if (epoch+1)%10==0:
-            fake=generator(fixed_noise)
-            real_plot=time_series_to_plot_real(dataset.denormalize(real))
-            generated_plot=time_series_to_plot(dataset.denormalize(fake))
-            wandb.log(
-                {"Prediction":generated_plot,
-                 "Actual":real_plot}
-            )
-            torch.save(generator.state_dict(),os.getenv("model_path")+f"/Run_{run_id}/model_{epoch}.pt")
+        with torch.no_grad():
+            generator.eval()
+            if (epoch+1)%10==0:
+                fake=generator(fixed_noise)
+                real_plot=time_series_to_plot_real(dataset.denormalize(real))
+                generated_plot=time_series_to_plot(dataset.denormalize(fake))
+                wandb.log(
+                    {"Prediction":generated_plot,
+                    "Actual":real_plot}
+                )
+                torch.save(generator.state_dict(),os.getenv("model_path")+f"/Run_{run_id}/model_{epoch+1}.pt")
 
 
 if __name__=='__main__':
-    data=pd.read_csv("final-data.csv")
-    run_id=1
+    data=pd.read_csv("data.csv")
+    run_id=3
     load_dotenv('.env')
-    dataset=BondsDataset([np.array(data['US_10Y_Yield'])])
+    dataset=BondsDataset([np.array(data['USA'])])
 
     dataloader=DataLoader(dataset,batch_size=1)
     device=torch.device("cpu")
 
     seq_len=dataset[0].size(0)
-    z_dim=16
-    generator=LSTMGenerator(in_dim=z_dim,out_dim=1,hidden_dim=256,n_layers=3).to(device)
-    discriminator=LSTMDiscriminator(in_dim=1,hidden_dim=256,n_layers=3).to(device)
+    z_dim=100
+    # generator=LSTMGenerator(in_dim=z_dim,out_dim=1,hidden_dim=256,n_layers=3).to(device)
+    # discriminator=LSTMDiscriminator(in_dim=1,hidden_dim=256,n_layers=3).to(device)
+
+    discriminator=CausalConvDiscriminator(input_size=1,n_layers=8,n_channel=10,kernel_size=8,dropout=0)
+    generator=CausalConvGenerator(noise_size=z_dim,output_size=1,n_layers=8,n_channel=10,kernel_size=8,dropout=0.2)
 
     loss_function=nn.BCELoss()
 
