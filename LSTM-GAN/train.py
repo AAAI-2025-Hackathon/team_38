@@ -3,6 +3,7 @@ from lstm_generator import LSTMGenerator
 from casualty import CausalConvDiscriminator,CausalConvGenerator
 import torch 
 from torch.utils.data import DataLoader
+from torch.nn.functional import normalize
 import numpy as np
 from dataset import BondsDataset
 import torchvision
@@ -14,7 +15,7 @@ from plot import time_series_to_plot,time_series_to_plot_real
 from dotenv import load_dotenv
 
 def training_loop():
-    for epoch in range(150000):
+    for epoch in range(5000):
         generator.train()
         discriminator.train()
         for step,data in enumerate(dataloader):
@@ -31,11 +32,13 @@ def training_loop():
             errd_real.backward()
             D_x=output.mean().item()
 
-            noise=torch.randn(batch_size,seq_len,z_dim,device=device)
+            noise=torch.add(torch.randn(batch_size,seq_len,z_dim,device=device),vals_tensor)
+            noise=noise.float()
             fake=generator(noise)
 
             label.fill_(fake_label)
             output=discriminator(fake)
+            # print(output)
             errd_fake=loss_function(output,label.float())
             errd_fake.backward()
             D_G_z1=output.mean().item()
@@ -61,20 +64,22 @@ def training_loop():
                     {"Prediction":generated_plot,
                     "Actual":real_plot}
                 )
-                torch.save(generator.state_dict(),os.getenv("model_path")+f"/Run_{run_id}/model_{epoch+1}.pt")
+                torch.save(generator.state_dict(),os.getenv("model_path")+f"/BAA/model_{epoch+1}.pt")
 
 
 if __name__=='__main__':
-    data=pd.read_csv("data.csv")
+    data=pd.read_csv("bonds_10yr_data.csv")
+    conditions=pd.read_csv("final-data.csv")
+    variable_names=conditions.columns.values.tolist()
     run_id=3
     load_dotenv('.env')
-    dataset=BondsDataset([np.array(data['USA'])])
+    dataset=BondsDataset([np.array(data['BAA_Bond_Yield'])])
 
     dataloader=DataLoader(dataset,batch_size=1)
     device=torch.device("cpu")
 
     seq_len=dataset[0].size(0)
-    z_dim=100
+    z_dim=12
     # generator=LSTMGenerator(in_dim=z_dim,out_dim=1,hidden_dim=256,n_layers=3).to(device)
     # discriminator=LSTMDiscriminator(in_dim=1,hidden_dim=256,n_layers=3).to(device)
 
@@ -93,5 +98,21 @@ if __name__=='__main__':
     fixed_noise = torch.randn(1, seq_len, z_dim, device=device)
 
     wandb.init(project="Bond Modelling GANs")
+    #handlenan
+    for col in variable_names[1:]:
+        conditions[col]=conditions[col].fillna(conditions[col].mean())
 
+    #Create(steps,12) matrix
+    # nan_counts=conditions.isna().sum()
+    # print(nan_counts)
+
+    vals=list()
+    for col in variable_names[1:]:
+        feat=np.array(conditions[col])
+        vals.append(feat)
+    vals_tensor=torch.tensor(np.array(vals))
+    vals_tensor=normalize(vals_tensor,p=2,dim=1)
+    vals_tensor=vals_tensor.view(1,seq_len,12)
+    # print(vals_tensor[:,:,1])
+    
     training_loop()

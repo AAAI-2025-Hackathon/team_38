@@ -4,6 +4,7 @@ from casualty import CausalConvGenerator
 import torch 
 from torch.utils.data import DataLoader
 import numpy as np
+from torch.nn.functional import normalize
 from dataset import BondsDataset
 import torchvision
 import wandb
@@ -13,43 +14,53 @@ import os
 from plot import time_series_to_plot,time_series_to_plot_real
 from dotenv import load_dotenv
 
-def denormalize(x):
-    real_data=torch.tensor(np.array(data['USA']))
+def denormalize(x,inp):
+    if inp=="US":
+        real_data=torch.tensor(np.array(data[inp+"_10Y_Yield"]))
+    else:
+        real_data=torch.tensor(np.array(data[inp+"_Bond_Yield"]))
     ma=torch.max(real_data)
     mi=torch.min(real_data)
+    print(ma)
     return 0.5 * (x*ma - x*mi + ma + mi)
 
 if __name__=='__main__':
     load_dotenv('.env')
-    data=pd.read_csv("data.csv")
+    data=pd.read_csv("bonds_10yr_data.csv")
+    conditions=pd.read_csv("final-data.csv")
+    variable_names=conditions.columns.values.tolist()
     data_dict={
-        'DATE':np.array(data['DATE']).tolist()
+        'Date':np.array(data['Date']).tolist()
     }
     df=pd.DataFrame(data=data_dict)
-    print(df.head())
     weights=os.getenv("model_path")
-    z_dim_c=100
-    z_dim_l=100
+    z_dim_c=12
     device=torch.device('cpu')
-    seq_len=432
-    dataset=BondsDataset([np.array(data['USA'])])
+    seq_len=121
+    vals=list()
+
+    for col in variable_names[1:]:
+        conditions[col]=conditions[col].fillna(conditions[col].mean())
+
+    for col in variable_names[1:]:
+        feat=np.array(conditions[col])
+        vals.append(feat)
+    vals_tensor=torch.tensor(np.array(vals))
+    vals_tensor=normalize(vals_tensor,p=2,dim=1)
+    vals_tensor=vals_tensor.view(1,seq_len,12)
+    
     #inp=input("Choose Generator type: ")
-    inps=['lstm','casualty']
+    inps=['AAA','BAA','US','Junk']
     for inp in inps:
-        if inp=='lstm':
-            fixed_noise=torch.randn(1,seq_len,z_dim_l,device=device)
-            generator=LSTMGenerator(in_dim=z_dim_l,out_dim=1,hidden_dim=256,n_layers=3).to(device)
-            generator.load_state_dict(torch.load(weights+"Run_2/model_6570.pt"))
-        elif inp=='casualty':
-            fixed_noise=torch.randn(1,seq_len,z_dim_c,device=device)
-            generator=CausalConvGenerator(noise_size=z_dim_c,output_size=1,n_layers=8,n_channel=10,kernel_size=8,dropout=0.2)
-            generator.load_state_dict(torch.load(weights+"Run_3/model_75000.pt"))
+        fixed_noise=torch.add(torch.randn(1,seq_len,z_dim_c,device=device),vals_tensor)
+        fixed_noise=fixed_noise.float()
+        generator=CausalConvGenerator(noise_size=z_dim_c,output_size=1,n_layers=8,n_channel=10,kernel_size=8,dropout=0.2)
+        generator.load_state_dict(torch.load(weights+f"{inp}/model_4000.pt"))
         generator.eval()
 
         fake=generator(fixed_noise)
-        generated_plot=time_series_to_plot(denormalize(fake))
-
-        fake=denormalize(fake)
+    
+        fake=denormalize(fake,inp)
         fake=fake.view(seq_len,)
         fake=fake.detach().numpy()
        
