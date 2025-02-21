@@ -1,6 +1,6 @@
 from lstm_discriminator import LSTMDiscriminator
 from lstm_generator import LSTMGenerator
-from casualty import CausalConvGenerator
+from GANS.causalty import CausalConvGenerator
 import torch 
 from torch.utils.data import DataLoader
 import numpy as np
