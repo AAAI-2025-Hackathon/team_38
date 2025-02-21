@@ -2,11 +2,11 @@ from statsmodels.tsa.arima.model import ARIMA
 import pandas as pd 
 
 
-df = pd.read_csv('output.csv')
+df = pd.read_csv('Outputs/output_monthly.csv')
 df_actual=pd.read_csv("bonds_10yr_data.csv")
 
-actual_series = df_actual['US_10Y_Yield']
-predicted_series = df['US']
+actual_series = df_actual['AAA_Bond_Yield']
+predicted_series = df['AAA']
 
 look_back = 12
 forecast_steps = 6

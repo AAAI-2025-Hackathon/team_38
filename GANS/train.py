@@ -64,12 +64,12 @@ def training_loop():
                     {"Prediction":generated_plot,
                     "Actual":real_plot}
                 )
-                torch.save(generator.state_dict(),os.getenv("model_path")+f"/BAA/model_{epoch+1}.pt")
+                torch.save(generator.state_dict(),os.getenv("model_path")+f"/BAA_W/model_{epoch+1}.pt")
 
 
 if __name__=='__main__':
-    data=pd.read_csv("bonds_10yr_data.csv")
-    conditions=pd.read_csv("final-data.csv")
+    data=pd.read_csv("bonds_10yr_weekly_data.csv")
+    conditions=pd.read_csv("economic_data_final.csv")
     variable_names=conditions.columns.values.tolist()
     run_id=3
     load_dotenv('.env')
