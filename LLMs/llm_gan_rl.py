@@ -186,7 +186,7 @@ def main():
 
             return predictions_df
         logger.info("Loading data...")
-        past_data = pd.read_csv('/root/config/gan_120_months_csv')
+        past_data = pd.read_csv('/root/config/bonda_10yr_data.csv')
         past_data['Month'] = range(len(past_data))
         past_data.set_index('Month', inplace=True)
         model_name = "Qwen/Qwen2.5-7B-Instruct-1M"
@@ -200,7 +200,7 @@ def main():
             logger.info(
                 f"Saving predictions with shape: {predictions_df.shape}")
             predictions_df.to_csv(
-                "/my_vol/predicted_bond_yields.csv", index=False)
+                "/my_vol/predicted_actual_bond_yields.csv", index=False)
             vol.commit()
             logger.info("Predictions saved successfully")
 
@@ -210,13 +210,13 @@ def main():
 
 image = modal.Image.debian_slim(python_version="3.10").pip_install(
     "torch", "pandas", "nltk", "matplotlib", "tqdm", "pyarrow", "fastparquet", "datasets", "peft", "transformers", "bitsandbytes"
-).add_local_file("LLMs/Inputs/gan_120_months.csv", remote_path="/root/config/gan_120_months_csv")
+).add_local_file("data/Yields/bonds_10yr_data.csv", remote_path="/root/config/bonda_10yr_data.csv")
 
 app = modal.App()
 vol = modal.Volume.from_name("my-volume")
 
 
-@app.function(gpu=modal.gpu.A100(size="40GB", count=1), image=image, timeout=32400, volumes={"/my_vol": vol})
+@app.function(gpu="A100-40GB:1", image=image, timeout=32400, volumes={"/my_vol": vol})
 def run_training():
     main()
 
