@@ -1,0 +1,722 @@
+{
+    "2014-12-01": {
+        "US_10Y_Yield": 2287.31,
+        "AAA_Bond_Yield": 3335.79,
+        "BAA_Bond_Yield": 3917.77,
+        "Junk_Bond_Yield": 3959.49
+    },
+    "2015-01-01": {
+        "US_10Y_Yield": 2182.0,
+        "AAA_Bond_Yield": 3365.73,
+        "BAA_Bond_Yield": 3581.33,
+        "Junk_Bond_Yield": 3773.26
+    },
+    "2015-02-01": {
+        "US_10Y_Yield": 2037.91,
+        "AAA_Bond_Yield": 3561.91,
+        "BAA_Bond_Yield": 3870.15,
+        "Junk_Bond_Yield": 3747.03
+    },
+    "2015-03-01": {
+        "US_10Y_Yield": 2537.89,
+        "AAA_Bond_Yield": 3340.39,
+        "BAA_Bond_Yield": 3989.67,
+        "Junk_Bond_Yield": 3860.98
+    },
+    "2015-04-01": {
+        "US_10Y_Yield": 2456.78,
+        "AAA_Bond_Yield": 3493.23,
+        "BAA_Bond_Yield": 4074.68,
+        "Junk_Bond_Yield": 4501.9
+    },
+    "2015-05-01": {
+        "US_10Y_Yield": 2232.59,
+        "AAA_Bond_Yield": 3525.94,
+        "BAA_Bond_Yield": 4042.78,
+        "Junk_Bond_Yield": 4619.25
+    },
+    "2015-06-01": {
+        "US_10Y_Yield": 2764.7,
+        "AAA_Bond_Yield": 3468.76,
+        "BAA_Bond_Yield": 4027.48,
+        "Junk_Bond_Yield": 4382.71
+    },
+    "2015-07-01": {
+        "US_10Y_Yield": 2443.87,
+        "AAA_Bond_Yield": 3614.11,
+        "BAA_Bond_Yield": 3945.68,
+        "Junk_Bond_Yield": 4201.46
+    },
+    "2015-08-01": {
+        "US_10Y_Yield": 2229.88,
+        "AAA_Bond_Yield": 3242.5,
+        "BAA_Bond_Yield": 3938.42,
+        "Junk_Bond_Yield": 4356.48
+    },
+    "2015-09-01": {
+        "US_10Y_Yield": 2066.74,
+        "AAA_Bond_Yield": 3320.47,
+        "BAA_Bond_Yield": 3972.79,
+        "Junk_Bond_Yield": 4281.8
+    },
+    "2015-10-01": {
+        "US_10Y_Yield": 2398.94,
+        "AAA_Bond_Yield": 3219.81,
+        "BAA_Bond_Yield": 3842.91,
+        "Junk_Bond_Yield": 4333.19
+    },
+    "2015-11-01": {
+        "US_10Y_Yield": 2210.85,
+        "AAA_Bond_Yield": 3017.24,
+        "BAA_Bond_Yield": 4087.81,
+        "Junk_Bond_Yield": 4394.85
+    },
+    "2015-12-01": {
+        "US_10Y_Yield": 2456.19,
+        "AAA_Bond_Yield": 3427.6,
+        "BAA_Bond_Yield": 3751.95,
+        "Junk_Bond_Yield": 4588.82
+    },
+    "2016-01-01": {
+        "US_10Y_Yield": 2272.17,
+        "AAA_Bond_Yield": 3493.1,
+        "BAA_Bond_Yield": 3479.13,
+        "Junk_Bond_Yield": 4149.72
+    },
+    "2016-02-01": {
+        "US_10Y_Yield": 2501.95,
+        "AAA_Bond_Yield": 3490.7,
+        "BAA_Bond_Yield": 3841.88,
+        "Junk_Bond_Yield": 4025.3
+    },
+    "2016-03-01": {
+        "US_10Y_Yield": 2293.31,
+        "AAA_Bond_Yield": 3461.04,
+        "BAA_Bond_Yield": 3969.57,
+        "Junk_Bond_Yield": 3977.75
+    },
+    "2016-04-01": {
+        "US_10Y_Yield": 2289.52,
+        "AAA_Bond_Yield": 2919.05,
+        "BAA_Bond_Yield": 3636.34,
+        "Junk_Bond_Yield": 4336.31
+    },
+    "2016-05-01": {
+        "US_10Y_Yield": 2265.44,
+        "AAA_Bond_Yield": 3220.5,
+        "BAA_Bond_Yield": 3742.04,
+        "Junk_Bond_Yield": 4106.94
+    },
+    "2016-06-01": {
+        "US_10Y_Yield": 2452.71,
+        "AAA_Bond_Yield": 3352.02,
+        "BAA_Bond_Yield": 3995.9,
+        "Junk_Bond_Yield": 3842.61
+    },
+    "2016-07-01": {
+        "US_10Y_Yield": 2492.02,
+        "AAA_Bond_Yield": 3327.79,
+        "BAA_Bond_Yield": 3933.79,
+        "Junk_Bond_Yield": 4840.9
+    },
+    "2016-08-01": {
+        "US_10Y_Yield": 2400.38,
+        "AAA_Bond_Yield": 3814.89,
+        "BAA_Bond_Yield": 3930.01,
+        "Junk_Bond_Yield": 4377.54
+    },
+    "2016-09-01": {
+        "US_10Y_Yield": 2338.34,
+        "AAA_Bond_Yield": 3278.14,
+        "BAA_Bond_Yield": 4017.56,
+        "Junk_Bond_Yield": 4535.19
+    },
+    "2016-10-01": {
+        "US_10Y_Yield": 1922.97,
+        "AAA_Bond_Yield": 2908.96,
+        "BAA_Bond_Yield": 3884.64,
+        "Junk_Bond_Yield": 3015.35
+    },
+    "2016-11-01": {
+        "US_10Y_Yield": 2846.37,
+        "AAA_Bond_Yield": 3347.33,
+        "BAA_Bond_Yield": 3770.94,
+        "Junk_Bond_Yield": 3544.62
+    },
+    "2016-12-01": {
+        "US_10Y_Yield": 2410.01,
+        "AAA_Bond_Yield": 3301.92,
+        "BAA_Bond_Yield": 3786.76,
+        "Junk_Bond_Yield": 3576.33
+    },
+    "2017-01-01": {
+        "US_10Y_Yield": 2467.3,
+        "AAA_Bond_Yield": 3511.96,
+        "BAA_Bond_Yield": 3882.59,
+        "Junk_Bond_Yield": 4149.19
+    },
+    "2017-02-01": {
+        "US_10Y_Yield": 2450.14,
+        "AAA_Bond_Yield": 2895.43,
+        "BAA_Bond_Yield": 3371.46,
+        "Junk_Bond_Yield": 3822.03
+    },
+    "2017-03-01": {
+        "US_10Y_Yield": 2655.75,
+        "AAA_Bond_Yield": 2834.55,
+        "BAA_Bond_Yield": 3799.38,
+        "Junk_Bond_Yield": 4061.74
+    },
+    "2017-04-01": {
+        "US_10Y_Yield": 2288.28,
+        "AAA_Bond_Yield": 2716.93,
+        "BAA_Bond_Yield": 3531.65,
+        "Junk_Bond_Yield": 3778.42
+    },
+    "2017-05-01": {
+        "US_10Y_Yield": 2455.04,
+        "AAA_Bond_Yield": 2834.42,
+        "BAA_Bond_Yield": 3607.39,
+        "Junk_Bond_Yield": 3642.27
+    },
+    "2017-06-01": {
+        "US_10Y_Yield": 2346.05,
+        "AAA_Bond_Yield": 3101.21,
+        "BAA_Bond_Yield": 3596.1,
+        "Junk_Bond_Yield": 4287.98
+    },
+    "2017-07-01": {
+        "US_10Y_Yield": 1329.37,
+        "AAA_Bond_Yield": 2939.98,
+        "BAA_Bond_Yield": 3733.52,
+        "Junk_Bond_Yield": 4470.7
+    },
+    "2017-08-01": {
+        "US_10Y_Yield": 2107.22,
+        "AAA_Bond_Yield": 3145.35,
+        "BAA_Bond_Yield": 3571.72,
+        "Junk_Bond_Yield": 3581.94
+    },
+    "2017-09-01": {
+        "US_10Y_Yield": 2256.61,
+        "AAA_Bond_Yield": 3061.51,
+        "BAA_Bond_Yield": 3457.88,
+        "Junk_Bond_Yield": 3767.54
+    },
+    "2017-10-01": {
+        "US_10Y_Yield": 2052.1,
+        "AAA_Bond_Yield": 3221.83,
+        "BAA_Bond_Yield": 3666.8,
+        "Junk_Bond_Yield": 3930.28
+    },
+    "2017-11-01": {
+        "US_10Y_Yield": 2827.86,
+        "AAA_Bond_Yield": 2681.06,
+        "BAA_Bond_Yield": 3529.03,
+        "Junk_Bond_Yield": 3902.09
+    },
+    "2017-12-01": {
+        "US_10Y_Yield": 2764.02,
+        "AAA_Bond_Yield": 3167.42,
+        "BAA_Bond_Yield": 3736.94,
+        "Junk_Bond_Yield": 4246.99
+    },
+    "2018-01-01": {
+        "US_10Y_Yield": 3104.77,
+        "AAA_Bond_Yield": 3029.21,
+        "BAA_Bond_Yield": 3643.82,
+        "Junk_Bond_Yield": 3904.21
+    },
+    "2018-02-01": {
+        "US_10Y_Yield": 2504.88,
+        "AAA_Bond_Yield": 3249.63,
+        "BAA_Bond_Yield": 4355.66,
+        "Junk_Bond_Yield": 4176.45
+    },
+    "2018-03-01": {
+        "US_10Y_Yield": 1735.1,
+        "AAA_Bond_Yield": 2958.34,
+        "BAA_Bond_Yield": 4080.87,
+        "Junk_Bond_Yield": 3259.01
+    },
+    "2018-04-01": {
+        "US_10Y_Yield": 2176.72,
+        "AAA_Bond_Yield": 2707.64,
+        "BAA_Bond_Yield": 4109.48,
+        "Junk_Bond_Yield": 4258.23
+    },
+    "2018-05-01": {
+        "US_10Y_Yield": 3525.06,
+        "AAA_Bond_Yield": 2935.76,
+        "BAA_Bond_Yield": 3761.77,
+        "Junk_Bond_Yield": 3286.3
+    },
+    "2018-06-01": {
+        "US_10Y_Yield": 1755.34,
+        "AAA_Bond_Yield": 3116.74,
+        "BAA_Bond_Yield": 4075.59,
+        "Junk_Bond_Yield": 5211.69
+    },
+    "2018-07-01": {
+        "US_10Y_Yield": 2367.12,
+        "AAA_Bond_Yield": 2937.14,
+        "BAA_Bond_Yield": 3603.3,
+        "Junk_Bond_Yield": 4272.22
+    },
+    "2018-08-01": {
+        "US_10Y_Yield": 2557.55,
+        "AAA_Bond_Yield": 3794.02,
+        "BAA_Bond_Yield": 4130.73,
+        "Junk_Bond_Yield": 3806.18
+    },
+    "2018-09-01": {
+        "US_10Y_Yield": 2001.37,
+        "AAA_Bond_Yield": 3548.82,
+        "BAA_Bond_Yield": 3713.99,
+        "Junk_Bond_Yield": 3091.49
+    },
+    "2018-10-01": {
+        "US_10Y_Yield": 1553.07,
+        "AAA_Bond_Yield": 3208.41,
+        "BAA_Bond_Yield": 3994.11,
+        "Junk_Bond_Yield": 3854.75
+    },
+    "2018-11-01": {
+        "US_10Y_Yield": 2905.21,
+        "AAA_Bond_Yield": 2672.03,
+        "BAA_Bond_Yield": 3837.71,
+        "Junk_Bond_Yield": 4162.31
+    },
+    "2018-12-01": {
+        "US_10Y_Yield": 2458.55,
+        "AAA_Bond_Yield": 3484.22,
+        "BAA_Bond_Yield": 3848.61,
+        "Junk_Bond_Yield": 3676.37
+    },
+    "2019-01-01": {
+        "US_10Y_Yield": 2070.99,
+        "AAA_Bond_Yield": 2980.88,
+        "BAA_Bond_Yield": 4138.31,
+        "Junk_Bond_Yield": 4227.64
+    },
+    "2019-02-01": {
+        "US_10Y_Yield": 2374.85,
+        "AAA_Bond_Yield": 3243.86,
+        "BAA_Bond_Yield": 4248.88,
+        "Junk_Bond_Yield": 4453.94
+    },
+    "2019-03-01": {
+        "US_10Y_Yield": 1492.4,
+        "AAA_Bond_Yield": 3189.15,
+        "BAA_Bond_Yield": 3870.24,
+        "Junk_Bond_Yield": 4151.04
+    },
+    "2019-04-01": {
+        "US_10Y_Yield": 1348.22,
+        "AAA_Bond_Yield": 2934.68,
+        "BAA_Bond_Yield": 3955.81,
+        "Junk_Bond_Yield": 3571.43
+    },
+    "2019-05-01": {
+        "US_10Y_Yield": 2176.41,
+        "AAA_Bond_Yield": 3404.27,
+        "BAA_Bond_Yield": 3893.87,
+        "Junk_Bond_Yield": 4021.88
+    },
+    "2019-06-01": {
+        "US_10Y_Yield": 1942.45,
+        "AAA_Bond_Yield": 2842.98,
+        "BAA_Bond_Yield": 3451.27,
+        "Junk_Bond_Yield": 4163.35
+    },
+    "2019-07-01": {
+        "US_10Y_Yield": 2285.76,
+        "AAA_Bond_Yield": 2844.39,
+        "BAA_Bond_Yield": 4014.89,
+        "Junk_Bond_Yield": 3793.79
+    },
+    "2019-08-01": {
+        "US_10Y_Yield": 2145.87,
+        "AAA_Bond_Yield": 2645.69,
+        "BAA_Bond_Yield": 3299.65,
+        "Junk_Bond_Yield": 4039.93
+    },
+    "2019-09-01": {
+        "US_10Y_Yield": 2664.94,
+        "AAA_Bond_Yield": 2958.64,
+        "BAA_Bond_Yield": 3452.51,
+        "Junk_Bond_Yield": 4045.14
+    },
+    "2019-10-01": {
+        "US_10Y_Yield": 2010.54,
+        "AAA_Bond_Yield": 3536.58,
+        "BAA_Bond_Yield": 4015.77,
+        "Junk_Bond_Yield": 4334.83
+    },
+    "2019-11-01": {
+        "US_10Y_Yield": 1976.79,
+        "AAA_Bond_Yield": 2626.77,
+        "BAA_Bond_Yield": 4040.93,
+        "Junk_Bond_Yield": 4065.41
+    },
+    "2019-12-01": {
+        "US_10Y_Yield": 2033.43,
+        "AAA_Bond_Yield": 3150.4,
+        "BAA_Bond_Yield": 4198.11,
+        "Junk_Bond_Yield": 4069.96
+    },
+    "2020-01-01": {
+        "US_10Y_Yield": 1809.73,
+        "AAA_Bond_Yield": 2611.45,
+        "BAA_Bond_Yield": 3362.02,
+        "Junk_Bond_Yield": 4131.32
+    },
+    "2020-02-01": {
+        "US_10Y_Yield": 2596.62,
+        "AAA_Bond_Yield": 3284.33,
+        "BAA_Bond_Yield": 4053.02,
+        "Junk_Bond_Yield": 2929.34
+    },
+    "2020-03-01": {
+        "US_10Y_Yield": 1825.6,
+        "AAA_Bond_Yield": 3785.79,
+        "BAA_Bond_Yield": 3845.09,
+        "Junk_Bond_Yield": 3156.21
+    },
+    "2020-04-01": {
+        "US_10Y_Yield": 1725.3,
+        "AAA_Bond_Yield": 3433.05,
+        "BAA_Bond_Yield": 4376.52,
+        "Junk_Bond_Yield": 4036.88
+    },
+    "2020-05-01": {
+        "US_10Y_Yield": 1954.46,
+        "AAA_Bond_Yield": 3715.59,
+        "BAA_Bond_Yield": 3406.27,
+        "Junk_Bond_Yield": 4171.31
+    },
+    "2020-06-01": {
+        "US_10Y_Yield": 2495.57,
+        "AAA_Bond_Yield": 2625.25,
+        "BAA_Bond_Yield": 4041.18,
+        "Junk_Bond_Yield": 3773.29
+    },
+    "2020-07-01": {
+        "US_10Y_Yield": 2124.91,
+        "AAA_Bond_Yield": 3346.52,
+        "BAA_Bond_Yield": 3936.5,
+        "Junk_Bond_Yield": 3864.91
+    },
+    "2020-08-01": {
+        "US_10Y_Yield": 2033.65,
+        "AAA_Bond_Yield": 3008.36,
+        "BAA_Bond_Yield": 3671.38,
+        "Junk_Bond_Yield": 3816.36
+    },
+    "2020-09-01": {
+        "US_10Y_Yield": 2367.65,
+        "AAA_Bond_Yield": 3377.27,
+        "BAA_Bond_Yield": 3644.14,
+        "Junk_Bond_Yield": 3417.08
+    },
+    "2020-10-01": {
+        "US_10Y_Yield": 2461.22,
+        "AAA_Bond_Yield": 2837.8,
+        "BAA_Bond_Yield": 3757.57,
+        "Junk_Bond_Yield": 4063.25
+    },
+    "2020-11-01": {
+        "US_10Y_Yield": 1851.05,
+        "AAA_Bond_Yield": 3290.07,
+        "BAA_Bond_Yield": 3962.74,
+        "Junk_Bond_Yield": 3491.64
+    },
+    "2020-12-01": {
+        "US_10Y_Yield": 2512.73,
+        "AAA_Bond_Yield": 3304.3,
+        "BAA_Bond_Yield": 3536.24,
+        "Junk_Bond_Yield": 4060.73
+    },
+    "2021-01-01": {
+        "US_10Y_Yield": 1516.64,
+        "AAA_Bond_Yield": 3252.21,
+        "BAA_Bond_Yield": 3490.35,
+        "Junk_Bond_Yield": 4144.75
+    },
+    "2021-02-01": {
+        "US_10Y_Yield": 2774.72,
+        "AAA_Bond_Yield": 2622.8,
+        "BAA_Bond_Yield": 4127.06,
+        "Junk_Bond_Yield": 4013.93
+    },
+    "2021-03-01": {
+        "US_10Y_Yield": 2970.15,
+        "AAA_Bond_Yield": 3289.19,
+        "BAA_Bond_Yield": 3517.99,
+        "Junk_Bond_Yield": 3379.1
+    },
+    "2021-04-01": {
+        "US_10Y_Yield": 2431.75,
+        "AAA_Bond_Yield": 3171.25,
+        "BAA_Bond_Yield": 3860.18,
+        "Junk_Bond_Yield": 4312.14
+    },
+    "2021-05-01": {
+        "US_10Y_Yield": 2518.2,
+        "AAA_Bond_Yield": 3235.12,
+        "BAA_Bond_Yield": 4070.38,
+        "Junk_Bond_Yield": 3584.45
+    },
+    "2021-06-01": {
+        "US_10Y_Yield": 2367.74,
+        "AAA_Bond_Yield": 3545.47,
+        "BAA_Bond_Yield": 3533.24,
+        "Junk_Bond_Yield": 3949.46
+    },
+    "2021-07-01": {
+        "US_10Y_Yield": 1478.42,
+        "AAA_Bond_Yield": 3073.13,
+        "BAA_Bond_Yield": 3803.88,
+        "Junk_Bond_Yield": 3676.68
+    },
+    "2021-08-01": {
+        "US_10Y_Yield": 2378.71,
+        "AAA_Bond_Yield": 3235.08,
+        "BAA_Bond_Yield": 3886.23,
+        "Junk_Bond_Yield": 4004.4
+    },
+    "2021-09-01": {
+        "US_10Y_Yield": 2157.3,
+        "AAA_Bond_Yield": 3340.07,
+        "BAA_Bond_Yield": 3935.85,
+        "Junk_Bond_Yield": 3941.81
+    },
+    "2021-10-01": {
+        "US_10Y_Yield": 2151.1,
+        "AAA_Bond_Yield": 3015.1,
+        "BAA_Bond_Yield": 3821.98,
+        "Junk_Bond_Yield": 3263.83
+    },
+    "2021-11-01": {
+        "US_10Y_Yield": 2616.73,
+        "AAA_Bond_Yield": 3238.85,
+        "BAA_Bond_Yield": 4038.65,
+        "Junk_Bond_Yield": 3366.66
+    },
+    "2021-12-01": {
+        "US_10Y_Yield": 2360.82,
+        "AAA_Bond_Yield": 3150.0,
+        "BAA_Bond_Yield": 3277.4,
+        "Junk_Bond_Yield": 3248.59
+    },
+    "2022-01-01": {
+        "US_10Y_Yield": 2049.1,
+        "AAA_Bond_Yield": 2988.83,
+        "BAA_Bond_Yield": 3154.76,
+        "Junk_Bond_Yield": 3098.53
+    },
+    "2022-02-01": {
+        "US_10Y_Yield": 2081.22,
+        "AAA_Bond_Yield": 3209.14,
+        "BAA_Bond_Yield": 3772.83,
+        "Junk_Bond_Yield": 3783.3
+    },
+    "2022-03-01": {
+        "US_10Y_Yield": 2065.2,
+        "AAA_Bond_Yield": 3181.58,
+        "BAA_Bond_Yield": 3633.47,
+        "Junk_Bond_Yield": 3753.45
+    },
+    "2022-04-01": {
+        "US_10Y_Yield": 2693.19,
+        "AAA_Bond_Yield": 2828.54,
+        "BAA_Bond_Yield": 4181.11,
+        "Junk_Bond_Yield": 4473.87
+    },
+    "2022-05-01": {
+        "US_10Y_Yield": 2394.07,
+        "AAA_Bond_Yield": 3169.83,
+        "BAA_Bond_Yield": 3784.4,
+        "Junk_Bond_Yield": 4085.71
+    },
+    "2022-06-01": {
+        "US_10Y_Yield": 1911.59,
+        "AAA_Bond_Yield": 2963.25,
+        "BAA_Bond_Yield": 3702.18,
+        "Junk_Bond_Yield": 4254.35
+    },
+    "2022-07-01": {
+        "US_10Y_Yield": 2013.99,
+        "AAA_Bond_Yield": 2969.01,
+        "BAA_Bond_Yield": 3761.74,
+        "Junk_Bond_Yield": 4157.44
+    },
+    "2022-08-01": {
+        "US_10Y_Yield": 2267.48,
+        "AAA_Bond_Yield": 2904.37,
+        "BAA_Bond_Yield": 3236.85,
+        "Junk_Bond_Yield": 3706.26
+    },
+    "2022-09-01": {
+        "US_10Y_Yield": 2506.32,
+        "AAA_Bond_Yield": 2949.94,
+        "BAA_Bond_Yield": 4167.95,
+        "Junk_Bond_Yield": 3414.01
+    },
+    "2022-10-01": {
+        "US_10Y_Yield": 2354.41,
+        "AAA_Bond_Yield": 2770.79,
+        "BAA_Bond_Yield": 3557.25,
+        "Junk_Bond_Yield": 3758.85
+    },
+    "2022-11-01": {
+        "US_10Y_Yield": 1864.77,
+        "AAA_Bond_Yield": 3384.01,
+        "BAA_Bond_Yield": 3545.36,
+        "Junk_Bond_Yield": 3700.61
+    },
+    "2022-12-01": {
+        "US_10Y_Yield": 2550.17,
+        "AAA_Bond_Yield": 3401.09,
+        "BAA_Bond_Yield": 3662.16,
+        "Junk_Bond_Yield": 3935.28
+    },
+    "2023-01-01": {
+        "US_10Y_Yield": 2585.09,
+        "AAA_Bond_Yield": 3198.78,
+        "BAA_Bond_Yield": 3861.2,
+        "Junk_Bond_Yield": 3510.71
+    },
+    "2023-02-01": {
+        "US_10Y_Yield": 2327.84,
+        "AAA_Bond_Yield": 3132.24,
+        "BAA_Bond_Yield": 3741.95,
+        "Junk_Bond_Yield": 3209.54
+    },
+    "2023-03-01": {
+        "US_10Y_Yield": 2587.62,
+        "AAA_Bond_Yield": 3371.98,
+        "BAA_Bond_Yield": 3957.5,
+        "Junk_Bond_Yield": 3551.09
+    },
+    "2023-04-01": {
+        "US_10Y_Yield": 1571.16,
+        "AAA_Bond_Yield": 3377.65,
+        "BAA_Bond_Yield": 3939.88,
+        "Junk_Bond_Yield": 3382.31
+    },
+    "2023-05-01": {
+        "US_10Y_Yield": 2356.7,
+        "AAA_Bond_Yield": 2993.38,
+        "BAA_Bond_Yield": 3761.99,
+        "Junk_Bond_Yield": 4095.0
+    },
+    "2023-06-01": {
+        "US_10Y_Yield": 2676.62,
+        "AAA_Bond_Yield": 3074.58,
+        "BAA_Bond_Yield": 3681.6,
+        "Junk_Bond_Yield": 3647.59
+    },
+    "2023-07-01": {
+        "US_10Y_Yield": 2684.05,
+        "AAA_Bond_Yield": 2652.4,
+        "BAA_Bond_Yield": 3840.11,
+        "Junk_Bond_Yield": 3106.42
+    },
+    "2023-08-01": {
+        "US_10Y_Yield": 2156.7,
+        "AAA_Bond_Yield": 3056.61,
+        "BAA_Bond_Yield": 3715.39,
+        "Junk_Bond_Yield": 2931.2
+    },
+    "2023-09-01": {
+        "US_10Y_Yield": 2530.12,
+        "AAA_Bond_Yield": 3332.12,
+        "BAA_Bond_Yield": 4065.64,
+        "Junk_Bond_Yield": 3660.56
+    },
+    "2023-10-01": {
+        "US_10Y_Yield": 1966.63,
+        "AAA_Bond_Yield": 2852.72,
+        "BAA_Bond_Yield": 3849.1,
+        "Junk_Bond_Yield": 3878.99
+    },
+    "2023-11-01": {
+        "US_10Y_Yield": 2018.18,
+        "AAA_Bond_Yield": 3215.46,
+        "BAA_Bond_Yield": 4205.76,
+        "Junk_Bond_Yield": 4278.39
+    },
+    "2023-12-01": {
+        "US_10Y_Yield": 2750.62,
+        "AAA_Bond_Yield": 3592.76,
+        "BAA_Bond_Yield": 3402.09,
+        "Junk_Bond_Yield": 4353.02
+    },
+    "2024-01-01": {
+        "US_10Y_Yield": 2502.37,
+        "AAA_Bond_Yield": 2955.44,
+        "BAA_Bond_Yield": 3623.8,
+        "Junk_Bond_Yield": 3229.32
+    },
+    "2024-02-01": {
+        "US_10Y_Yield": 1379.1,
+        "AAA_Bond_Yield": 2571.89,
+        "BAA_Bond_Yield": 3657.05,
+        "Junk_Bond_Yield": 4353.07
+    },
+    "2024-03-01": {
+        "US_10Y_Yield": 2657.93,
+        "AAA_Bond_Yield": 2517.96,
+        "BAA_Bond_Yield": 3413.71,
+        "Junk_Bond_Yield": 4193.68
+    },
+    "2024-04-01": {
+        "US_10Y_Yield": 2023.77,
+        "AAA_Bond_Yield": 3531.36,
+        "BAA_Bond_Yield": 3954.6,
+        "Junk_Bond_Yield": 3209.78
+    },
+    "2024-05-01": {
+        "US_10Y_Yield": 1848.01,
+        "AAA_Bond_Yield": 3143.7,
+        "BAA_Bond_Yield": 3599.55,
+        "Junk_Bond_Yield": 3013.23
+    },
+    "2024-06-01": {
+        "US_10Y_Yield": 1584.56,
+        "AAA_Bond_Yield": 2938.29,
+        "BAA_Bond_Yield": 3758.85,
+        "Junk_Bond_Yield": 3571.13
+    },
+    "2024-07-01": {
+        "US_10Y_Yield": 2097.57,
+        "AAA_Bond_Yield": 2801.69,
+        "BAA_Bond_Yield": 3757.44,
+        "Junk_Bond_Yield": 3664.97
+    },
+    "2024-08-01": {
+        "US_10Y_Yield": 1705.43,
+        "AAA_Bond_Yield": 2978.63,
+        "BAA_Bond_Yield": 3807.26,
+        "Junk_Bond_Yield": 4077.92
+    },
+    "2024-09-01": {
+        "US_10Y_Yield": 2641.48,
+        "AAA_Bond_Yield": 3563.48,
+        "BAA_Bond_Yield": 3874.27,
+        "Junk_Bond_Yield": 4336.93
+    },
+    "2024-10-01": {
+        "US_10Y_Yield": 2584.34,
+        "AAA_Bond_Yield": 3126.39,
+        "BAA_Bond_Yield": 3220.81,
+        "Junk_Bond_Yield": 3686.34
+    },
+    "2024-11-01": {
+        "US_10Y_Yield": 2681.19,
+        "AAA_Bond_Yield": 3380.09,
+        "BAA_Bond_Yield": 3760.46,
+        "Junk_Bond_Yield": 4050.64
+    }
+}
