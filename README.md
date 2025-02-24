@@ -8,19 +8,6 @@
 
 # Predicting Liquidity-Aware Bond Yields using Causal GANs and Deep Reinforcement Learning with LLM Evaluation
 
-## AAAI-2025 Hackathon Submission
-
-### Team Members
-- **Jaskaran Singh Walia** ([karanwalia2k3@gmail.com](mailto:karanwalia2k3@gmail.com))
-- **Aarush Sinha** ([aarush.sinha@gmail.com](mailto:aarush.sinha@gmail.com))
-- **Srinitish Srinivasan** ([smudge0110@icloud.com](mailto:smudge0110@icloud.com))
-- **Srihari Unnikrishnan** ([srihari.unnikrishnan@gmail.com](mailto:srihari.unnikrishnan@gmail.com))
-
-### Submission Details
-- ✅ All team members agree to abide by the [Hackathon Rules](https://aaai.org/conference/aaai/aaai-25/hackathon/)
-- ✅ The project was developed during the hackathon period (February 17 – February 24, 2025)
-- ✅ Demo video (2-minute max): [Watch Here](https://your-link.com)
-
 ---
 
 ## 🚀 Project Overview
