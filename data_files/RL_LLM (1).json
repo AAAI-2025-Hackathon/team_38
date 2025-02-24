@@ -1,0 +1,93 @@
+[
+    {
+      "column": "US_10Y_Yield",
+      "analysis": "Historically, the US 10-Year Treasury Yield has shown a moderate upward trend over the past year, reflecting stronger economic growth and inflationary pressures. However, it has experienced some volatility due to Federal Reserve policy shifts and geopolitical events.",
+      "next_2_month_trend": "Expected to remain relatively stable with potential slight decreases if inflationary pressures subside and monetary tightening continues.",
+      "volatility_risk_factors": "Moderately volatile, with periods of heightened uncertainty due to central bank communication and global macroeconomic developments.",
+      "investment_implication": "Investors may consider holding or cautiously buying if anticipating stabilization.",
+      "recommendation": "HOLD",
+      "timing": "HOLD for 2 months",
+      "profit/loss":"Bond yields fell by 80bps. Profit.",
+      "profit":1
+    },
+    {
+      "column": "US_10Y_Yield_Actual",
+      "analysis": "The Actual US 10-Year Treasury Yield has followed a similar trajectory to the forecasted yield, with some minor deviations due to unexpected economic data releases and market sentiment swings.",
+      "next_2_month_trend": "Expected to trend slightly downward if economic growth slows or inflation decreases.",
+      "volatility_risk_factors": "Stable, with minimal deviation from historical norms.",
+      "investment_implication": "Buy if anticipating a pullback in yields.",
+      "recommendation": "BUY",
+      "timing": "BUY NOW",
+      "profit/loss":"Bond yields fell by 80bps. Profit.",
+      "profit":1
+
+    },
+    {
+      "column": "AAA_Bond_Yield",
+      "analysis": "The AAA Bond Yield has shown resilience over the past year, with modest increases tied to improving corporate earnings and stricter credit rating requirements. However, it remains relatively stable compared to other bond categories.",
+      "next_2_month_trend": "Expected to remain flat or slightly increase if corporate earnings continue to strengthen.",
+      "volatility_risk_factors": "Relatively stable with slight fluctuations due to changing corporate profit margins.",
+      "investment_implication": "Hold if anticipating continued corporate strength.",
+      "recommendation": "HOLD",
+      "timing": "HOLD for 2 months",
+      "profit/loss":"Bond yields increased by 42bps. Loss.",
+      "profit":0
+    },
+    {
+      "column": "AAA_Bond_Yield_Actual",
+      "analysis": "The Actual AAA Bond Yield has closely tracked the forecasted yield, with minor adjustments due to unexpected industry-specific developments.",
+      "next_2_month_trend": "Expected to trend upwards if corporate profits accelerate.",
+      "volatility_risk_factors": "Slightly volatile, with some noise due to quarterly earnings reports.",
+      "investment_implication": "Buy if anticipating a yield pickup driven by earnings growth.",
+      "recommendation": "BUY",
+      "timing": "BUY NOW",
+      "profit/loss":"Bond yields increased by 42bps. Loss.",
+      "profit":0
+
+    },
+    {
+      "column": "BAA_Bond_Yield",
+      "analysis": "The BAA Bond Yield has shown greater volatility over the past year, reflecting the higher risk associated with this category. It has experienced sharp declines during periods of economic uncertainty and recoveries during periods of stability.",
+      "next_2_month_trend": "Expected to remain stable with potential slight increases if underlying credit risk improves.",
+      "volatility_risk_factors": "Significantly more volatile due to increased default risks and shifting investor sentiment.",
+      "investment_implication": "HOLD if anticipating reduced credit risk.",
+      "recommendation": "HOLD",
+      "timing": "HOLD for 2 months",
+      "profit/loss":"Bond yields Increased by 30bps. Profit.",
+      "profit":1
+    },
+    {
+      "column": "BAA_Bond_Yield_Actual",
+      "analysis": "The Actual BAA Bond Yield has closely aligned with the forecasted yield, with some deviations due to unexpected defaults or recoveries in the credit market.",
+      "next_2_month_trend": "Expected to decline slightly if corporate debt levels remain elevated.",
+      "volatility_risk_factors": "Highly volatile, with significant swings due to credit market dynamics.",
+      "investment_implication": "CAUTION if anticipating further declines.",
+      "recommendation": "CAUTION",
+      "timing": "Be cautious in the next 2 months",
+      "profit/loss":"Bond yields Increased by 30bps. Profit.",
+      "profit":1
+
+    },
+    {
+      "column": "Junk_Bond_Yield",
+      "analysis": "The Junk Bond Yield has exhibited extreme volatility over the past year, reflecting the high risk associated with this category. It has experienced sharp declines during periods of economic stress and recoveries during periods of relative stability.",
+      "next_2_month_trend": "Expected to remain stable with potential slight increases if investor sentiment improves.",
+      "volatility_risk_factors": "Highly volatile, with significant swings due to changing investor confidence and recovery prospects.",
+      "investment_implication": "Be cautious if anticipating further declines.",
+      "recommendation": "CAUTION",
+      "timing": "Be cautious in the next 2 months",
+      "profit/loss":"Nothing.",
+      "profit":-1
+
+    },
+    {
+      "column": "Junk_Bond_Yield_Actual",
+      "analysis": "The Actual Junk Bond Yield has closely tracked the forecasted yield, with some adjustments due to unexpected recoveries or defaults in the credit market.",
+      "next_2_month_trend": "Expected to remain relatively stable with potential slight decreases if recovery prospects improve.",
+      "volatility_risk_factors": "Extremely volatile, with significant fluctuations due to changing market sentiment.",
+      "investment_implication": "HOLD if anticipating stability.",
+      "recommendation": "HOLD",
+      "timing": "One Month: Bond yields fell by 10 bps. Profit. Next Month, Bond yield increased by 5%. loss",
+      "profit":1
+    }
+  ]
