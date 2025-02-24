@@ -3,7 +3,7 @@ import yfinance as yf
 from fredapi import Fred
 from datetime import datetime, timedelta
 
-fred = Fred(api_key='242b0976c07592e0fd1536f9948517c9')
+fred = Fred(api_key='')
 
 def get_closest_data(series, date):
     """

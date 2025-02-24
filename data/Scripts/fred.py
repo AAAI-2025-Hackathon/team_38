@@ -4,7 +4,7 @@ import yfinance as yf
 from fredapi import Fred
 from datetime import datetime, timedelta
 
-fred = Fred(api_key='242b0976c07592e0fd1536f9948517c9')
+fred = Fred(api_key='')
 
 end_date = datetime(2024, 12, 1)
 start_date = datetime(2014, 12, 1)
