@@ -1,54 +1,54 @@
 # Results
 
-This readme summarizes the experimental findings of our integrated framework, which combines synthetic data generation via Causal GANs and Deep Reinforcement Learning (SAC) with predictive modeling using a fine-tuned LLM (Qwen2.5-7B). Our evaluation spans multiple metrics:  forecasting accuracy, trading signal quality, and profitability—across four bond categories (AAA, BAA, US10Y, Junk) over a 10-year period.
+This README summarizes the experimental findings of our integrated framework, which combines synthetic data generation via Causal GANs and Deep Reinforcement Learning (SAC) with predictive modeling using a fine-tuned LLM (Qwen2.5-7B). Our evaluation spans multiple metrics: forecasting accuracy, trading signal quality, and profitability—across four bond categories (AAA, BAA, US10Y, Junk) over a 10-year period.
 
 ## Evaluation Metrics
 
-- **LLM-as-Judge Evaluation:**  
+- *LLM-as-Judge Evaluation:*  
   A separate LLM (DeepSeekR1) scores trading recommendations on a 1–5 scale.
   
-- **Profit/Loss Analysis:**  
+- *Profit/Loss Analysis:*  
   Profitability is measured by the percentage of months where the predicted trading signal would have resulted in a profit.
   
-- **Mean Absolute Error (MAE):**  
+- *Mean Absolute Error (MAE):*  
   MAE quantifies the prediction error between the synthetic and actual bond yields.
   
-- **Expert Evaluation:**  
+- *Expert Evaluation:*  
   Three financial experts provided qualitative scores for the realism of synthetic data and the validity of trading signals.
 
 ## Key Findings
 
 ### Predictive Accuracy
 
-- **MAE Improvement:**  
-  The RL-enhanced synthetic data achieves an MAE of **0.103** for US10Y yields, significantly lower than that of the GAN-only approach. This indicates that incorporating reinforcement learning leads to more accurate replication of real-world bond yield dynamics.
+- *MAE Improvement:*  
+  The RL-enhanced synthetic data achieves an MAE of *0.103* for US10Y yields, significantly lower than that of the GAN-only approach. This indicates that incorporating reinforcement learning leads to more accurate replication of real-world bond yield dynamics.
 
 ### Trading Signal Quality
 
-- **LLM-as-Judge Scores:**  
-  - **RL Method:** 3.37  
-  - **GAN-only Method:** 2.87  
-  - **Actual Data:** 2.58  
+- *LLM-as-Judge Scores:*  
+  - *RL Method:* 3.37  
+  - *GAN-only Method:* 2.87  
+  - *Actual Data:* 2.58  
   The RL-enhanced predictions receive the highest scores, suggesting that they provide superior trading recommendations.
 
-- **Expert Evaluations:**  
-  Experts rated the RL method with an average score of **4.67** compared to **4.17** for GAN-only and **3.67** for actual data, reinforcing the value of our integrated approach.
+- *Expert Evaluations:*  
+  Experts rated the RL method with an average score of *4.67* compared to *4.17* for GAN-only and *3.67* for actual data, reinforcing the value of our integrated approach.
 
 ### Profitability Analysis
 
-- **Profit/Loss Rates:**  
-  The RL-based approach achieved a **60% profit rate for AAA bonds** and **54% for BAA bonds**, highlighting its practical utility in generating profitable trading strategies.
+- *Profit/Loss Rates:*  
+  The RL-based approach achieved a *60% profit rate for AAA bonds* and *54% for BAA bonds*, highlighting its practical utility in generating profitable trading strategies.
 
 ### Ablation Studies
 
-- Removing the RL component resulted in an increased MAE of **0.3** for US10Y yields and **0.1** for Junk bond yields. This underscores the critical role of reinforcement learning in enhancing the synthetic data quality.
+- Removing the RL component resulted in an increased MAE of *0.3* for US10Y yields and *0.1* for Junk bond yields. This underscores the critical role of reinforcement learning in enhancing the synthetic data quality.
 
 ## Detailed Results
 
 ### Table 3: Average Evaluation Scores
-| **Method** | **Avg. LLM Judge Score (↑)** |
+| *Method* | *Avg. LLM Judge Score (↑)* |
 |------------|------------------------------|
-| **RL**   | **3.37**                    |
+| *RL*   | *3.37*                    |
 | GAN        | 2.87                         |
 | Actual     | 2.58                         |
 
@@ -59,18 +59,17 @@ This readme summarizes the experimental findings of our integrated framework, wh
 | GAN    | AAA_Bond_Yield   | 0.343    |
 | GAN    | BAA_Bond_Yield   | 0.372    |
 | GAN    | Junk_Bond_Yield  | 0.594    |
-| RL     | US_10Y_Yield     | **0.103**|
+| RL     | US_10Y_Yield     | *0.103*|
 | RL     | AAA_Bond_Yield   | 0.124    |
 | RL     | BAA_Bond_Yield   | 0.174    |
 | RL     | Junk_Bond_Yield  | 0.458    |
 
-
 ### Table 5: Expert Evaluation Scores
-| **Method** | **Expert 1** | **Expert 2** | **Expert 3** | **Average (↑)** |
+| *Method* | *Expert 1* | *Expert 2* | *Expert 3* | *Average (↑)* |
 |------------|--------------|--------------|--------------|-----------------|
-| **RL**   | 4.5          | 5.0          | 4.5          | **4.67**        |
-| GAN        | 4.0          | 4.0          | 4.5          | **4.17**        |
-| Actual     | 3.5          | 3.5          | 4.0          | **3.67**        |
+| *RL*   | 4.5          | 5.0          | 4.5          | *4.67*        |
+| GAN        | 4.0          | 4.0          | 4.5          | *4.17*        |
+| Actual     | 3.5          | 3.5          | 4.0          | *3.67*        |
 
 ### Figure 3: RL Reward Curves
 ![BOND-Rewards](https://github.com/user-attachments/assets/17f1482f-4c5f-482a-8724-6f193d1ee837)
@@ -89,4 +88,3 @@ The results demonstrate that integrating reinforcement learning with Causal GANs
 - And more profitable trading strategies (increased profit month ratios).
 
 These findings validate our framework’s potential for practical financial forecasting and decision-making.
-
