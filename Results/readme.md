@@ -1,6 +1,6 @@
 # 📊 Results
 
-This README presents the experimental findings of our *integrated framework*, which combines **synthetic data generation* via *Causal GANs* and *Deep Reinforcement Learning (SAC)* with predictive modeling using a fine-tuned *LLM (Qwen2.5-7B). Our evaluation spans multiple key metrics: **forecasting accuracy**, trading signal quality, and profitability—across four bond categories (AAA, BAA, US10Y, Junk) over a **10-year period**.
+This README presents the experimental findings of our *integrated framework*, which combines **synthetic data generation* via *Causal GANs* and *Deep Reinforcement Learning (SAC)* with predictive modeling using a fine-tuned *LLM (Qwen2.5-7B)*. Our evaluation spans multiple key metrics: **forecasting accuracy**, trading signal quality, and profitability—across four bond categories (AAA, BAA, US10Y, Junk) over a **10-year period**.
 
 ---
 
