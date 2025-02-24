@@ -6,74 +6,91 @@
 - [x] This AAAI 2025 hackathon entry was created by the team during the period of the hackathon, February 17 – February 24, 2025
 - [x] The entry includes a 2-minute maximum length demo video here: [Link](https://your-link.com) 
 
-
-
 # Predicting Liquidity-Aware Bond Yields using Causal GANs and Deep Reinforcement Learning with LLM Evaluation
 
-This repository contains the code and documentation for our project. The project was developed as part of the AAAI-2025 Hackathon and is structured into several folders corresponding to the different components of our framework.
+## AAAI-2025 Hackathon Submission
 
-## Project Overview
+### Team Members
+- **Jaskaran Singh Walia** ([karanwalia2k3@gmail.com](mailto:karanwalia2k3@gmail.com))
+- **Aarush Sinha** ([aarush.sinha@gmail.com](mailto:aarush.sinha@gmail.com))
+- **Srinitish Srinivasan** ([smudge0110@icloud.com](mailto:smudge0110@icloud.com))
+- **Srihari Unnikrishnan** ([srihari.unnikrishnan@gmail.com](mailto:srihari.unnikrishnan@gmail.com))
 
-Our approach combines three key components:
-- **Synthetic Data Generation:** Using Causal GANs to generate realistic bond yield time-series data.
-- **Reinforcement Learning (SAC):** Enhancing synthetic data quality by refining the generated data.
-- **Predictive Modeling with LLMs:** Leveraging a fine-tuned Qwen2.5-7B model to generate actionable trading signals, risk assessments, and volatility projections.
+### Submission Details
+- ✅ All team members agree to abide by the [Hackathon Rules](https://aaai.org/conference/aaai/aaai-25/hackathon/)
+- ✅ The project was developed during the hackathon period (February 17 – February 24, 2025)
+- ✅ Demo video (2-minute max): [Watch Here](https://your-link.com)
 
-An architecture diagram below provides an overview of the system design.
+---
 
-## Architecture Diagram
-![architecture (1)](https://github.com/user-attachments/assets/8a072a33-0a26-4b7a-8466-d5b3e68dc628)
+## 🚀 Project Overview
 
-*For detailed results and additional diagrams, please refer to the [Results README](Results/README.md).*
+This project presents a novel approach to **predicting liquidity-aware bond yields** by integrating three cutting-edge technologies:
 
-## Directory Structure
+1. **Synthetic Data Generation with Causal GANs** – Models realistic bond yield time-series data while preserving causal dependencies.
+2. **Deep Reinforcement Learning (Soft Actor-Critic - SAC)** – Enhances synthetic data quality through self-learning feedback loops.
+3. **Predictive Modeling with Fine-tuned LLMs** – Utilizes a **fine-tuned Qwen2.5-7B** model to extract actionable trading signals, risk assessments, and volatility forecasts.
 
-The repository is organized as follows:
+### 📌 Key Features
+- **High-Fidelity Synthetic Bond Yield Data** with Causal GANs
+- **Self-Optimizing Data Refinement** using Deep RL (SAC)
+- **LLM-Driven Market Insights** for intelligent trading strategies
+- **Robust Performance Evaluation** with Mean Absolute Error (MAE) metrics
 
-- **GANS**  
-  Contains the code and notebooks for implementing the Causal GANs used in synthetic data generation.
+---
 
-- **LLMs**  
-  Houses the code and experiments for fine-tuning and running the Large Language Models on the generated data.
+## 🏗️ Architecture Overview
 
-- **MAE**  
-  Includes scripts and notebooks for computing the Mean Absolute Error (MAE) between actual and predicted bond yields.
+![Architecture Diagram](https://github.com/user-attachments/assets/8a072a33-0a26-4b7a-8466-d5b3e68dc628)
 
-- **Results**  
-  Contains the evaluation scripts, result logs, and the results diagram. Detailed results are described in the README inside this folder.
+For detailed experimental results, refer to [Results/README.md](Results/README.md).
 
-- **DATA**  
-  Holds the CSV files and other datasets used throughout the project.
+---
 
+## 📂 Directory Structure
 
-- Other files:
-  - **Paper.pdf:** The full research paper with introduction, methodology, experiments, results and findings 
+```
+├── GANS/         # Causal GAN implementation for synthetic bond yield data
+├── LLMs/         # Fine-tuned Qwen2.5-7B for predictive modeling
+├── MAE/          # Scripts for Mean Absolute Error computation
+├── Results/      # Evaluation scripts, logs, and results summary
+├── DATA/         # CSV files and datasets used in the project
+├── Paper.pdf     # Full research paper (Introduction, Methodology, Results)
+└── README.md     # Project documentation
+```
 
-All code, notebooks, and data files are organized into their respective folders to ensure a clean and modular project structure.
+---
 
-## Getting Started
+## 📊 Results & Visualizations
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/AAAI-2025-Hackathon/team_38.git
-   ```
+### Model Performance
 
+- Extensive **quantitative and qualitative** evaluation results are available in the **[Results](Results/readme.md) folder**.
+- Benchmarked against real-world bond yield data with **low MAE scores**.
+- The **LLM predictions align with historical financial trends** and trader insights.
 
-2. **Explore the Folders:**
+---
 
-    Each folder contains the relevant code and notebooks for its component. For instance:
-    
-    - **GANS:** Use the notebooks in the GANS folder to explore synthetic data generation.
-    - **LLMs:** Check out the LLMs folder for predictive modeling experiments.
-    - **MAE:** Review the MAE folder for scripts computing the error metrics.
+## ⚡ Quick Start
 
-3. **Results:**
-    - **Results:** Detailed results are available in the [Results folder](Results/README.md).
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/AAAI-2025-Hackathon/team_38.git
+cd team_38
+```
 
-## Run the Experiments
+### 2️⃣ Explore the Project
+- **GANS:** Run synthetic data generation scripts.
+- **LLMs:** Experiment with predictive models.
+- **MAE:** Evaluate model performance.
+- **Results:** Access detailed findings and analysis.
 
-Follow the instructions in the individual folder READMEs to run the experiments locally or on your preferred platform.
+### 3️⃣ Run Experiments
+Follow the setup and execution instructions inside each folder’s `README.md`.
 
+---
 
-For any questions or further information, please refer to the respective folder documentation or contact the team.
+## 📬 Contact & Support
+For questions or collaborations, reach out to the team via email or check the repository for further details.
 
+🚀 **Let’s redefine liquidity-aware bond yield prediction together!**
